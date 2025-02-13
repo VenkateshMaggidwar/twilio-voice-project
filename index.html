@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice SDK Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://sdk.twilio.com/js/client/releases/1.14.0/twilio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Voice SDK Demo</h1>
+        <div class="call-controls">
+            <input type="tel" id="phone-number" 
+                   placeholder="Enter phone number (e.g., +1234567890)">
+            <button id="call-button" disabled>Call</button>
+            <button id="hangup-button" disabled>Hang Up</button>
+        </div>
+        <div class="status-container">
+            <p>Status: <span id="call-status">Initializing...</span></p>
+        </div>
+        <div class="audio-controls">
+            <label>Microphone:</label>
+            <select id="microphone-select"></select>
+            <label>Speaker:</label>
+            <select id="speaker-select"></select>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
