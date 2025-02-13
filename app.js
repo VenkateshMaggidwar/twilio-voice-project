@@ -5,7 +5,7 @@ let currentConnection = null;
 async function setupDevice() {
     try {
         // Replace with your Twilio Function URL
-        const response = await fetch('https://your-twilio-domain.twil.io/generate-token', {
+        const response = await fetch('https://voice-sdk-service-1507.twil.io/generate-token', {
             method: 'POST'
         });
         const data = await response.json();
@@ -97,7 +97,7 @@ document.getElementById('call-button').addEventListener('click', () => {
     const params = {
         To: phoneNumber,
         // Replace with your voice handler function URL
-        url: 'https://your-twilio-domain.twil.io/voice-handler'
+        url: 'https://voice-sdk-service-1507.twil.io/voice-handler'
     };
     
     try {
